@@ -1,8 +1,6 @@
-#
 %include	/usr/lib/rpm/macros.perl
-#
 Summary:	CTorrent Control Server
-Summary(pl.UTF-8):	Serwer sterujący dla CTorrent
+Summary(pl.UTF-8):	Serwer sterujący dla CTorrenta
 Name:		ctcs
 Version:	1.2
 Release:	1
@@ -16,11 +14,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CTorrent Control Server (CTCS) is an interface for monitoring and managing
-Enhanced CTorrent clients. It can manage allocation of bandwidth, provide
-status information, and allow changes to the running configuration of each
-client. Communication with CTorrent is via a TCP connection, and the user
-interface is a web browser.
+CTorrent Control Server (CTCS) is an interface for monitoring and
+managing Enhanced CTorrent clients. It can manage allocation of
+bandwidth, provide status information, and allow changes to the
+running configuration of each client. Communication with CTorrent is
+via a TCP connection, and the user interface is a web browser.
+
+%description -l pl.UTF-8
+CTorrent Control Server (CTCS) to interfejs do monitorowania i
+zarządzania klientami rozszerzonego CTorrenta. Może on zarządzać
+przydzielaniem pasma, udostępniać informacje o stanie i pozwalać na
+zmiany w aktualnej konfiguracji każdego działającego klienta.
+Komunikacja z CTorrentem odbywa się przez połączenie TCP, a
+interfejsem użytkownika jest przeglądarka WWW.
 
 %prep
 %setup -q
