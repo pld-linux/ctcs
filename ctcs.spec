@@ -2,12 +2,12 @@
 Summary:	CTorrent Control Server
 Summary(pl.UTF-8):	Serwer sterujący dla CTorrenta
 Name:		ctcs
-Version:	1.2
+Version:	1.4
 Release:	1
 License:	distributable
 Group:		Applications
 Source0:	http://www.rahul.net/dholmes/ctorrent/%{name}-%{version}.tar.gz
-# Source0-md5:	cd8f9b28a846f89b1d35827d28489abc
+# Source0-md5:	9ada24b81665ed8f18c5d3023298c5a3
 URL:		http://www.rahul.net/dholmes/ctorrent/ctcs.html
 BuildRequires:	rpm-perlprov
 BuildArch:	noarch
@@ -35,7 +35,7 @@ interfejsem użytkownika jest przeglądarka WWW.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install ctcs.new $RPM_BUILD_ROOT%{_bindir}/ctcs
+install ctcs $RPM_BUILD_ROOT%{_bindir}/ctcs
 
 %clean
 rm -rf $RPM_BUILD_ROOT
