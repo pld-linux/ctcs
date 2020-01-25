@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	CTorrent Control Server
 Summary(pl.UTF-8):	Serwer sterujący dla CTorrenta
 Name:		ctcs
